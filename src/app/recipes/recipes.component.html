@@ -1,0 +1,8 @@
+<h3>Recipes list</h3>
+<form>
+  <input type="text" placeholder="Filter by name">
+  <button class="primary" type="button">Search</button>
+</form>
+<app-ingredients
+  *ngFor="let ingredient of ingredients"
+  [ingredient]="ingredient" ></app-ingredients>
